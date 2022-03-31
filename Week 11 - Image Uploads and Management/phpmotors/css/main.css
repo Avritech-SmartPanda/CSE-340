@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.page {
+    background-color: #FFFFFF;
+    border: 4px solid #4c96d7;
+    border-radius: 4px;
+}
+
+.todayBtn {
+    position: absolute;
+    background: #4c96d7;
+    margin-top: 16px;
+    padding: 12px;
+    border: 1px solid #606060;
+}
+
+.btn {
+    background: #4c96d7;
+    padding: 6px 12px;
+    border: 1px solid #606060;
+}
+
+.showBtn {
+    background: #606060;
+    padding: 12px;
+    border: 1px solid #606060;
+}
+
+#inv-display li a {
+    width: 100%;
+}
+
+#inv-display li a img {
+    width: 100%;
+}
+
+#wrapper {
+    background-color: white;
+    padding: 12px;
+}
+
+body {
+    margin: 34px auto 10px auto;
+    max-width: 75%;
+    background-image: url(../images/site/checkerboard.jpg);
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1em;
+    background-size: 370px 370px;
+}
+
+#logo {
+    width: 16%;
+}
+
+body img {
+    max-width: 100%;
+}
+
+h1 {
+    padding: 10px 0 30px 0;
+    margin: 10px 0 -8px 0;
+}
+
+form {
+    padding-left: 10px;
+}
+
+form button {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+#bottom {
+    padding-bottom: 10px;
+}
+
+#acctLink {
+    float: right;
+    text-decoration: none;
+    color: #3a3a3a;
+    margin: 12px 12px 0;
+}
+
+hr {
+    background-color: gray;
+    height: 5px;
+}
+
+/*---------NAV-------------*/
+
+nav {
+    background-color: #3a3a3a;
+    height: 2.8em;
+}
+
+nav ul li {
+    margin: 13px 5px;
+    display: inline-block;
+}
+
+header {
+    padding-left: 32px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 17px 2px;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    background-color: #4c96d7;
+    padding: 17px 2px;
+    color: #3a3a3a;
+    font-size: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+/*---------------Body ------------------*/
+#carDetails {
+    position: relative;
+    color: #4c96d7;
+    padding: 0px 69px;
+}
+
+#carDetails div {
+    font-size: 20px;
+    background-color: white;
+    color: #4c96d7;
+    font-weight: bolder;
+}
+
+#carDetails h3 {
+    position: absolute;
+    left: 30px;
+    top: -20px;
+}
+
+#carDetails h2 {
+    font-weight: bold;
+}
+
+#carDetails p:nth-child(2) {
+    top: 20px;
+}
+
+#carDetails p:nth-child(3) {
+    top: 40px;
+}
+
+#carDetails p:nth-child(4) {
+    top: 60px;
+}
+
+
+/*----------------------BODY------------------------*/
+
+.upgrades {
+    background-color: #a6cbeb;
+    border: 1px solid #3a3a3a;
+    margin: 25px 0;
+    height: 50px;
+}
+
+.upgrades img {
+    height: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 6px;
+}
+
+.upgrades a {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#col1 {
+    padding: 5px;
+    line-height: 2;
+}
+
+#col1 a {
+    text-align: center;
+}
+
+#col2 {
+    padding: 5px;
+}
+
+#minigrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding-left: 10px;
+}
+
+
+
+.upgrades {
+    text-align: center;
+}
+
+#base {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+
+.vehicle-description {
+    line-height: 1.5;
+}
+
+.my-2 {
+    margin: 15px 0;
+}
+
+p.error {
+    color: red;
+    font-weight: 600;
+}
+
+p.success {
+    color: green;
+    font-weight: 600;
+}
+
+p.notice {
+    color: rgb(17, 17, 17);
+    font-weight: 400;
+}
+
+span.welcome {
+    position: absolute;
+    color: #4c96d7;
+    margin-top: 35px;
+    right: 13%;
+}
+
+ul.thumbnails-display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: -25px;
+}
+
+li.thumbnail-content {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+
+
+@media (max-width: 767px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    #carDetails img {
+        padding-top: 60px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+
+    body {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+
+
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    #inv-display {
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inv-display li {
+        margin-bottom: 60px;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+        padding-bottom: 20px;
+    }
+
+    #inv-display li img {
+        max-width: 100%;
+    }
+
+    #inv-display li h2 {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    ul#image-display {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    #inv-display {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        display: flex;
+        gap: 60px;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+    }
+
+    #inv-display li {
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        border: 1px #ccc solid;
+        border-radius: 12px;
+        margin-bottom: 40px;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+
+    .vehicle-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 16px;
+    }
+
+    .vehicle-amount {
+        background: #f5f5f5;
+        padding: 12px;
+    }
+
+    .vehicle-description {
+        padding: 1px 12px;
+    }
+
+    .vehicle-color {
+        padding: 12px;
+        background: #f5f5f5;
+    }
+
+    .vehicle-instock {
+        padding: 12px;
+    }
+
+    .innerVehicleDisplay {
+        display: grid;
+        grid-template-columns: 20% 76%;
+    }
+
+    .vehicle-details {
+        margin-left: 40px;
+        margin-top: -24px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    /* For vehicle display in classification view */
+    ul#image-display,
+    #inv-display {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        max-width: 365px;
+        max-height: max-content;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+    }
+
+    #inv-display li {
+        /* max-width: 345px; */
+        flex: 1 0 auto;
+        text-align: center;
+        /* height: 375px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .innerVehicleDisplay {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    li.thumbnail-content img {
+        width: 86vw;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .vehicle-container {
+        display: inline-block;
+    }
+
+    .vehicle-image {
+        width: 100%;
+    }
+
+    body {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+
+/***************************************************************************************************
+ * FORM CONTROLS
+ * *************************************************************************************************/
+input[type=text], input[type=email], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4c96d7;
+    background-color: #3a3a3a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2e7dbe;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin: 10px 0;
+}
+
+fieldset div p {
+    font-size: 11px;
+    color: #696969;
+}
+
+
+.my-30 {
+    margin: 30px 0;
+}
