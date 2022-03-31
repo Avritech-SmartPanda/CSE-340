@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+.page {
+    background-color: #FFFFFF;
+    border: 4px solid #4c96d7;
+    border-radius: 4px;
+}
+
+.todayBtn {
+    position: absolute;
+    background: #4c96d7;
+    margin-top: 16px;
+    padding: 12px;
+    border: 1px solid #606060;
+}
+.btn {
+    background: #4c96d7;
+    padding: 6px 12px;
+    border: 1px solid #606060;
+}
+.showBtn {
+    background: #606060;
+    padding: 12px;
+    border: 1px solid #606060;
+}
+
+#inv-display li a {
+    width: 100%;
+}
+
+#inv-display li a img {
+    width: 100%;
+}
+
+#wrapper {
+    background-color: white;
+    padding: 12px;
+}
+
+body {
+    margin: 34px auto 10px auto;
+    max-width: 75%;
+    background-image: url(../images/site/checkerboard.jpg);
+    font-family: "Share Tech Mono", monospace;
+    font-size:1em;
+    background-size: 370px 370px;
+}
+
+#logo {
+    width: 16%;
+}
+
+body img {
+    max-width: 100%;
+}
+
+h1 {
+    padding: 10px 0 30px 0;
+    margin: 10px 0 -8px 0;
+}
+
+form {
+    padding-left: 10px;
+}
+
+form button {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+#bottom {
+    padding-bottom: 10px;
+}
+
+#acctLink {
+    float: right;
+    text-decoration: none;
+    color: #3a3a3a;
+    margin: 12px 12px 0;
+    font-size: 12px;
+}
+
+hr {
+    background-color: gray;
+    height: 5px;
+}
+
+/*---------NAV-------------*/
+
+nav {
+    margin-top: -18px;
+    background-color: #3a3a3a;
+    height: 2.8em;
+}
+
+nav ul li {
+    margin-top: 13px;
+    display: inline-block;
+}
+
+header {
+    padding-left: 32px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 17px 2px;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    background-color: #4c96d7;
+    padding: 17px 2px;
+    color: #3a3a3a;
+    font-size: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+/*---------------Body ------------------*/
+#carDetails {
+    position: relative;
+    color: #4c96d7;
+    padding: 0px 69px;
+}
+
+#carDetails div {
+    font-size: 20px;
+    background-color: white;
+    color: #4c96d7;
+    font-weight: bolder;
+}
+
+#carDetails h3 {
+    position: absolute;
+    left: 30px;
+    top: -20px;
+}
+
+#carDetails h2 {
+    font-weight: bold;
+}
+
+#carDetails p:nth-child(2) {
+    top: 20px;
+}
+
+#carDetails p:nth-child(3) {
+    top: 40px;
+}
+
+#carDetails p:nth-child(4) {
+    top: 60px;
+}
+
+
+/*----------------------BODY------------------------*/
+
+.upgrades {
+    background-color: #a6cbeb;
+    border: 1px solid #3a3a3a;
+    margin: 25px 0;
+    height: 50px;
+}
+
+.upgrades img {
+    height: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom:6px;
+}
+.upgrades a {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#col1 {
+    padding: 5px;
+    line-height: 2;
+}
+
+#col1 a {
+    text-align: center;
+}
+
+#col2 {
+    padding: 5px;
+}
+
+#minigrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding-left: 10px;
+}
+
+
+
+.upgrades {
+    text-align: center;
+}
+
+#base {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+@media (max-width: 749px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    #carDetails img {
+        padding-top: 60px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+    body {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+
+
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    #inv-display {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #inv-display li {
+        margin-bottom: 0.5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+        border: 1px solid black;
+        width: 70%;
+        text-align: center;
+    }
+
+    #inv-display li img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    /* For vehicle display in classification view */
+    #inv-display {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+    }
+
+    #inv-display li {
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid black;
+        margin: 10px;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+}
+
+.my-2{
+    margin: 15px 0;
+}
+
+p.error {
+    color: red;
+}
+span.welcome {
+    position: absolute;
+    color: #4c96d7;
+    margin-top: 35px;
+    right: 13%;
+}
